@@ -1,0 +1,85 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Create a Jenkins Server
+Parameters:
+  InstType:
+    Type: String
+    Default: t2.micro
+  keyName:
+    Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
+    Type: 'AWS::EC2::KeyPair::KeyName'
+    ConstraintDescription: must be the name of an existing EC2 KeyPair.
+  amiId:
+    Type:  'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
+    Default: '/aws/service/canonical/ubuntu/server/bionic/stable/current/amd6/hvm/ebs-gp2/ami-id'
+  sshLocation:
+    Description: Set this to your IP
+    Type: String
+    MinLength: '9'
+    MaxLength: '18'
+    Default: 0.0.0.0/0
+    AllowedPattern: '(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})/(\d{1,2})'
+    ConstraintDescription: Enter your IP address.
+Resources:
+  SecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: Allow SSH Communication from our ip and port 8080 to the Jenkins host
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 8080
+          ToPort: 8080
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: !Ref sshLocation
+  JenkinsInstance:
+    Type: 'AWS::EC2::Instance'
+    DependsOn: SecurityGroup
+    Properties:
+      ImageId: !Ref amiId
+      InstanceType: !Ref InstType
+      KeyName: !Ref keyName
+      SecurityGroupIds:
+        - !GetAtt 
+          - SecurityGroup
+          - GroupId
+      Tags:
+        - Key: Name
+          Value: JenkinsServer
+      UserData: !Base64 
+        'Fn::Sub': >
+          #!/bin/bash -xe sudo apt update sudo apt install openjdk-8-jdk -y 
+
+          wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |
+          sudo apt-key add - sudo sh -c 'echo deb
+          https://pkg.jenkins.io/debian-stable binary/ > \
+              /etc/apt/sources.list.d/jenkins.list'
+          sudo apt-get update sudo apt-get install jenkins -y 
+
+          # Install Docker sudo apt-get install docker.io -y sudo systemctl
+          start docker
+
+          # Install Maven sudo apt-get install maven -y
+
+          # To get the Jenkins initialAdminPassword sudo cp
+          /var/lib/jenkins/secrets/initialAdminPassword /home/ubuntu/ sudo chmod
+          777 /home/ubuntu/initialAdminPassword
+Outputs:
+  JenkinsServerURL:
+    Description: URL of Jenkins Server
+    Value: !Sub 
+      - 'http://${publicip}:8080/'
+      - publicip: !GetAtt 
+          - JenkinsInstance
+          - PublicIp
+  Command:
+    Description: Command to get Jenkins Initial Password for Mac Users
+    Value: !Sub 
+      - >-
+        scp -i ${kName}.pem ubuntu@${publicip}:/home/ubuntu/initialAdminPassword
+        .
+      - kName: !Ref keyName
+        publicip: !GetAtt 
+          - JenkinsInstance
+          - PublicIp
