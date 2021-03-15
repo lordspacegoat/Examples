@@ -1,12 +1,12 @@
-#Deploy Laravel via Jenkins
+# Deploy Laravel via Jenkins
 
 1. Add Source Code Repository
 
-!(sourcecode.png)
+!(https://github.com/dapperandy/Examples/blob/main/jenkins/sourcecode.png)
 
 2. Create Webhook triggers
 
-!(webhook.png)
+!(https://github.com/dapperandy/Examples/blob/main/jenkins/webhook.png)
 
 3. Pre-Build Step
 
@@ -21,7 +21,7 @@ cd pefoma.dev
 
 4. Post-BUild Step Build Artifacts Over SSH
 
-!(postbuild.png)
+!(https://github.com/dapperandy/Examples/blob/main/jenkins/postbuild.png)
 
 ```
 cd /var/www/html/
