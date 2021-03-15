@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F3994A3D9995E18056F531A /* Pods_QA_Simple_Rewards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980DFF4E18865CFEF5676CD3 /* Pods_QA_Simple_Rewards.framework */; };
+		491BC48B1E1BDC26004E7D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491BC48A1E1BDC26004E7D88 /* AppDelegate.swift */; };
+		491BC48D1E1BDC26004E7D88 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491BC48C1E1BDC26004E7D88 /* HomePage.swift */; };
+		491BC4901E1BDC26004E7D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491BC48E1E1BDC26004E7D88 /* Main.storyboard */; };
+		491BC4931E1BDC26004E7D88 /* QA_Simple_Rewards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 491BC4911E1BDC26004E7D88 /* QA_Simple_Rewards.xcdatamodeld */; };
+		491BC4981E1BDC26004E7D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491BC4961E1BDC26004E7D88 /* LaunchScreen.storyboard */; };
+		494148AD1E5A4C560002970E /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494148AC1E5A4C560002970E /* MyCustomCell.swift */; };
+		494E62A41E4C797D0020E3C5 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E62A31E4C797D0020E3C5 /* TransactionsViewController.swift */; };
+		49558CC81E5EFB7D005EC587 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49558CC71E5EFB7D005EC587 /* Popup.swift */; };
+		4967B6031E1C32A500022FB9 /* YourProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967B6021E1C32A500022FB9 /* YourProfile.swift */; };
+		4970DCF71E1BDCA0004914E3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4970DCF31E1BDCA0004914E3 /* Alamofire.framework */; };
+		4970DCF81E1BDCA0004914E3 /* ChameleonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4970DCF41E1BDCA0004914E3 /* ChameleonFramework.framework */; };
+		4970DCF91E1BDCA0004914E3 /* SwiftSpinner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4970DCF51E1BDCA0004914E3 /* SwiftSpinner.framework */; };
+		4970DCFA1E1BDCA0004914E3 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4970DCF61E1BDCA0004914E3 /* SwiftyJSON.framework */; };
+		498F53E51E1CFB72002E276C /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498F53E41E1CFB72002E276C /* AlamofireImage.framework */; };
+		498F53E71E1D3FD5002E276C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498F53E61E1D3FD5002E276C /* Media.xcassets */; };
+		49AED1FF1E2CE3D80038087C /* UNREAD MESSAGESLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 49AED1FE1E2CE3D80038087C /* UNREAD MESSAGESLogin.png */; };
+		49BB84201E5B461F00888843 /* GoalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BB841F1E5B461F00888843 /* GoalsCell.swift */; };
+		49BB84221E5B741200888843 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49BB84211E5B741200888843 /* GoogleService-Info.plist */; };
+		49E546E91E5CCA05009D9F34 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E546E81E5CCA05009D9F34 /* Kingfisher.framework */; };
+		49F94BA31E4CA36F006A4FF5 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F94BA21E4CA36F006A4FF5 /* GoalsViewController.swift */; };
+		49FE866F1E28D7A4001523AB /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE866E1E28D7A4001523AB /* ScannerViewController.swift */; };
+		49FE86711E28DA80001523AB /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE86701E28DA80001523AB /* ProcessViewController.swift */; };
+		49FE86801E2CD006001523AB /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49FE86751E2CD006001523AB /* Gotham-Bold.otf */; };
+		49FE86831E2CD006001523AB /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49FE86781E2CD006001523AB /* Gotham-Light.otf */; };
+		49FE86851E2CD006001523AB /* Gotham-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49FE867A1E2CD006001523AB /* Gotham-Medium.ttf */; };
+		49FE86881E2CD006001523AB /* Gotham-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 49FE867D1E2CD006001523AB /* Gotham-Thin.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		060E1E377BD8A615568954F9 /* Pods-QA Simple Rewards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QA Simple Rewards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QA Simple Rewards/Pods-QA Simple Rewards.debug.xcconfig"; sourceTree = "<group>"; };
+		491BC4871E1BDC25004E7D88 /* QA Simple Rewards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QA Simple Rewards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		491BC48A1E1BDC26004E7D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		491BC48C1E1BDC26004E7D88 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		491BC48F1E1BDC26004E7D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		491BC4921E1BDC26004E7D88 /* QA_Simple_Rewards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QA_Simple_Rewards.xcdatamodel; sourceTree = "<group>"; };
+		491BC4971E1BDC26004E7D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		491BC4991E1BDC26004E7D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494148AC1E5A4C560002970E /* MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		494E62A31E4C797D0020E3C5 /* TransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		49558CC71E5EFB7D005EC587 /* Popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		4967B6021E1C32A500022FB9 /* YourProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourProfile.swift; sourceTree = "<group>"; };
+		4970DCF31E1BDCA0004914E3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/QA_Simple_Rewards-fbsexzrhohavxodugrwegmlbtjdx/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		4970DCF41E1BDCA0004914E3 /* ChameleonFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChameleonFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/QA_Simple_Rewards-fbsexzrhohavxodugrwegmlbtjdx/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework"; sourceTree = "<group>"; };
+		4970DCF51E1BDCA0004914E3 /* SwiftSpinner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSpinner.framework; path = "../../../../Library/Developer/Xcode/DerivedData/QA_Simple_Rewards-fbsexzrhohavxodugrwegmlbtjdx/Build/Products/Debug-iphonesimulator/SwiftSpinner/SwiftSpinner.framework"; sourceTree = "<group>"; };
+		4970DCF61E1BDCA0004914E3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/QA_Simple_Rewards-fbsexzrhohavxodugrwegmlbtjdx/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		498F53E41E1CFB72002E276C /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "../../../../Library/Developer/Xcode/DerivedData/QA_Simple_Rewards-fbsexzrhohavxodugrwegmlbtjdx/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
+		498F53E61E1D3FD5002E276C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		49AED1FE1E2CE3D80038087C /* UNREAD MESSAGESLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UNREAD MESSAGESLogin.png"; sourceTree = "<group>"; };
+		49BB841F1E5B461F00888843 /* GoalsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsCell.swift; sourceTree = "<group>"; };
+		49BB84211E5B741200888843 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49BB84231E5B77AB00888843 /* QA Simple Rewards.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "QA Simple Rewards.entitlements"; sourceTree = "<group>"; };
+		49E546E81E5CCA05009D9F34 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../../Library/Developer/Xcode/DerivedData/QA_Simple_Rewards-fbsexzrhohavxodugrwegmlbtjdx/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
+		49F94BA21E4CA36F006A4FF5 /* GoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		49FE866E1E28D7A4001523AB /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		49FE86701E28DA80001523AB /* ProcessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
+		49FE86751E2CD006001523AB /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		49FE86781E2CD006001523AB /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		49FE867A1E2CD006001523AB /* Gotham-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.ttf"; sourceTree = "<group>"; };
+		49FE867D1E2CD006001523AB /* Gotham-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Thin.otf"; sourceTree = "<group>"; };
+		980DFF4E18865CFEF5676CD3 /* Pods_QA_Simple_Rewards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QA_Simple_Rewards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81119A976B5F7BEC48AAE60 /* Pods-QA Simple Rewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QA Simple Rewards.release.xcconfig"; path = "Pods/Target Support Files/Pods-QA Simple Rewards/Pods-QA Simple Rewards.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		491BC4841E1BDC25004E7D88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E546E91E5CCA05009D9F34 /* Kingfisher.framework in Frameworks */,
+				498F53E51E1CFB72002E276C /* AlamofireImage.framework in Frameworks */,
+				4970DCF71E1BDCA0004914E3 /* Alamofire.framework in Frameworks */,
+				4970DCF81E1BDCA0004914E3 /* ChameleonFramework.framework in Frameworks */,
+				4970DCF91E1BDCA0004914E3 /* SwiftSpinner.framework in Frameworks */,
+				4970DCFA1E1BDCA0004914E3 /* SwiftyJSON.framework in Frameworks */,
+				2F3994A3D9995E18056F531A /* Pods_QA_Simple_Rewards.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		491BC47E1E1BDC25004E7D88 = {
+			isa = PBXGroup;
+			children = (
+				49FE86741E2CCFD8001523AB /* Fonts */,
+				491BC4891E1BDC25004E7D88 /* QA Simple Rewards */,
+				491BC4881E1BDC25004E7D88 /* Products */,
+				62C6358AD49927E1F6E21BA9 /* Pods */,
+				9392E2F0A56E0BBEE2E7AECE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		491BC4881E1BDC25004E7D88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				491BC4871E1BDC25004E7D88 /* QA Simple Rewards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		491BC4891E1BDC25004E7D88 /* QA Simple Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				49BB84231E5B77AB00888843 /* QA Simple Rewards.entitlements */,
+				49AED1FE1E2CE3D80038087C /* UNREAD MESSAGESLogin.png */,
+				491BC48A1E1BDC26004E7D88 /* AppDelegate.swift */,
+				491BC48C1E1BDC26004E7D88 /* HomePage.swift */,
+				491BC48E1E1BDC26004E7D88 /* Main.storyboard */,
+				494148AC1E5A4C560002970E /* MyCustomCell.swift */,
+				49FE86701E28DA80001523AB /* ProcessViewController.swift */,
+				4967B6021E1C32A500022FB9 /* YourProfile.swift */,
+				49FE866E1E28D7A4001523AB /* ScannerViewController.swift */,
+				494E62A31E4C797D0020E3C5 /* TransactionsViewController.swift */,
+				49F94BA21E4CA36F006A4FF5 /* GoalsViewController.swift */,
+				49BB841F1E5B461F00888843 /* GoalsCell.swift */,
+				498F53E61E1D3FD5002E276C /* Media.xcassets */,
+				491BC4961E1BDC26004E7D88 /* LaunchScreen.storyboard */,
+				491BC4991E1BDC26004E7D88 /* Info.plist */,
+				49BB84211E5B741200888843 /* GoogleService-Info.plist */,
+				491BC4911E1BDC26004E7D88 /* QA_Simple_Rewards.xcdatamodeld */,
+				49558CC71E5EFB7D005EC587 /* Popup.swift */,
+			);
+			path = "QA Simple Rewards";
+			sourceTree = "<group>";
+		};
+		49FE86741E2CCFD8001523AB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				49FE86751E2CD006001523AB /* Gotham-Bold.otf */,
+				49FE86781E2CD006001523AB /* Gotham-Light.otf */,
+				49FE867A1E2CD006001523AB /* Gotham-Medium.ttf */,
+				49FE867D1E2CD006001523AB /* Gotham-Thin.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		62C6358AD49927E1F6E21BA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				060E1E377BD8A615568954F9 /* Pods-QA Simple Rewards.debug.xcconfig */,
+				D81119A976B5F7BEC48AAE60 /* Pods-QA Simple Rewards.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9392E2F0A56E0BBEE2E7AECE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49E546E81E5CCA05009D9F34 /* Kingfisher.framework */,
+				498F53E41E1CFB72002E276C /* AlamofireImage.framework */,
+				4970DCF31E1BDCA0004914E3 /* Alamofire.framework */,
+				4970DCF41E1BDCA0004914E3 /* ChameleonFramework.framework */,
+				4970DCF51E1BDCA0004914E3 /* SwiftSpinner.framework */,
+				4970DCF61E1BDCA0004914E3 /* SwiftyJSON.framework */,
+				980DFF4E18865CFEF5676CD3 /* Pods_QA_Simple_Rewards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		491BC4861E1BDC25004E7D88 /* QA Simple Rewards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 491BC49C1E1BDC26004E7D88 /* Build configuration list for PBXNativeTarget "QA Simple Rewards" */;
+			buildPhases = (
+				2BC5A7E48CCA000A01638331 /* [CP] Check Pods Manifest.lock */,
+				491BC4831E1BDC25004E7D88 /* Sources */,
+				491BC4841E1BDC25004E7D88 /* Frameworks */,
+				491BC4851E1BDC25004E7D88 /* Resources */,
+				6457A02A2276FC84CA1B5D64 /* [CP] Embed Pods Frameworks */,
+				79C5CCCBAADD39BEF02CAA9C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QA Simple Rewards";
+			productName = "QA Simple Rewards";
+			productReference = 491BC4871E1BDC25004E7D88 /* QA Simple Rewards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		491BC47F1E1BDC25004E7D88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Andrew Mitchell";
+				TargetAttributes = {
+					491BC4861E1BDC25004E7D88 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G9FCUYJGYP;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 491BC4821E1BDC25004E7D88 /* Build configuration list for PBXProject "QA Simple Rewards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 491BC47E1E1BDC25004E7D88;
+			productRefGroup = 491BC4881E1BDC25004E7D88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				491BC4861E1BDC25004E7D88 /* QA Simple Rewards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		491BC4851E1BDC25004E7D88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FE86801E2CD006001523AB /* Gotham-Bold.otf in Resources */,
+				491BC4981E1BDC26004E7D88 /* LaunchScreen.storyboard in Resources */,
+				49BB84221E5B741200888843 /* GoogleService-Info.plist in Resources */,
+				49FE86851E2CD006001523AB /* Gotham-Medium.ttf in Resources */,
+				49AED1FF1E2CE3D80038087C /* UNREAD MESSAGESLogin.png in Resources */,
+				49FE86831E2CD006001523AB /* Gotham-Light.otf in Resources */,
+				49FE86881E2CD006001523AB /* Gotham-Thin.otf in Resources */,
+				498F53E71E1D3FD5002E276C /* Media.xcassets in Resources */,
+				491BC4901E1BDC26004E7D88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BC5A7E48CCA000A01638331 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6457A02A2276FC84CA1B5D64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QA Simple Rewards/Pods-QA Simple Rewards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79C5CCCBAADD39BEF02CAA9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QA Simple Rewards/Pods-QA Simple Rewards-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		491BC4831E1BDC25004E7D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49BB84201E5B461F00888843 /* GoalsCell.swift in Sources */,
+				494148AD1E5A4C560002970E /* MyCustomCell.swift in Sources */,
+				494E62A41E4C797D0020E3C5 /* TransactionsViewController.swift in Sources */,
+				49F94BA31E4CA36F006A4FF5 /* GoalsViewController.swift in Sources */,
+				4967B6031E1C32A500022FB9 /* YourProfile.swift in Sources */,
+				491BC48D1E1BDC26004E7D88 /* HomePage.swift in Sources */,
+				49FE86711E28DA80001523AB /* ProcessViewController.swift in Sources */,
+				491BC48B1E1BDC26004E7D88 /* AppDelegate.swift in Sources */,
+				49FE866F1E28D7A4001523AB /* ScannerViewController.swift in Sources */,
+				49558CC81E5EFB7D005EC587 /* Popup.swift in Sources */,
+				491BC4931E1BDC26004E7D88 /* QA_Simple_Rewards.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		491BC48E1E1BDC26004E7D88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491BC48F1E1BDC26004E7D88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		491BC4961E1BDC26004E7D88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491BC4971E1BDC26004E7D88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		491BC49A1E1BDC26004E7D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		491BC49B1E1BDC26004E7D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		491BC49D1E1BDC26004E7D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060E1E377BD8A615568954F9 /* Pods-QA Simple Rewards.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "QA Simple Rewards/QA Simple Rewards.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G9FCUYJGYP;
+				INFOPLIST_FILE = "QA Simple Rewards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qaflooringsolutions.QA-Simple-Rewards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		491BC49E1E1BDC26004E7D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D81119A976B5F7BEC48AAE60 /* Pods-QA Simple Rewards.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "QA Simple Rewards/QA Simple Rewards.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G9FCUYJGYP;
+				INFOPLIST_FILE = "QA Simple Rewards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qaflooringsolutions.QA-Simple-Rewards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		491BC4821E1BDC25004E7D88 /* Build configuration list for PBXProject "QA Simple Rewards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491BC49A1E1BDC26004E7D88 /* Debug */,
+				491BC49B1E1BDC26004E7D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		491BC49C1E1BDC26004E7D88 /* Build configuration list for PBXNativeTarget "QA Simple Rewards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491BC49D1E1BDC26004E7D88 /* Debug */,
+				491BC49E1E1BDC26004E7D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		491BC4911E1BDC26004E7D88 /* QA_Simple_Rewards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				491BC4921E1BDC26004E7D88 /* QA_Simple_Rewards.xcdatamodel */,
+			);
+			currentVersion = 491BC4921E1BDC26004E7D88 /* QA_Simple_Rewards.xcdatamodel */;
+			path = QA_Simple_Rewards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 491BC47F1E1BDC25004E7D88 /* Project object */;
+}
