@@ -1,18 +1,29 @@
-Add Source Code Repository
+#Deploy Laravel via Jenkins
 
-Create Webhook triggers
+1. Add Source Code Repository
 
-Pre-Build Step
+!(sourcecode.png)
 
+2. Create Webhook triggers
+
+!(webhook.png)
+
+3. Pre-Build Step
+
+```
 ls
 cd .. 
 ls
 tar -czvf dev.pefoma-build.tar.gz pefoma.dev/ --exclude=pefoma.dev/*.git*
 mv ~/workspace/dev.pefoma-build.tar.gz pefoma.dev/dev.pefoma-build.tar.gz
 cd pefoma.dev
+```
 
-Build Artifacts Over SSH
+4. Post-BUild Step Build Artifacts Over SSH
 
+!(postbuild.png)
+
+```
 cd /var/www/html/
 sudo chown ubuntu:ubuntu dev.pefoma-build.tar.gz
 tar -xzvf dev.pefoma-build.tar.gz
@@ -33,4 +44,5 @@ php artisan view:clear
 php artisan route:cache
 php artisan cache:clear
 php artisan schedule:run
+```
 
