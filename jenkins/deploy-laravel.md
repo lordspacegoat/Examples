@@ -2,11 +2,11 @@
 
 1. Add Source Code Repository
 
-!(https://github.com/dapperandy/Examples/blob/main/jenkins/sourcecode.png)
+![Source Code Repo](https://github.com/dapperandy/Examples/blob/main/jenkins/sourcecode.png)
 
 2. Create Webhook triggers
 
-!(https://github.com/dapperandy/Examples/blob/main/jenkins/webhook.png)
+![WebHook Triggers](https://github.com/dapperandy/Examples/blob/main/jenkins/webhook.png)
 
 3. Pre-Build Step
 
@@ -19,9 +19,9 @@ mv ~/workspace/dev.pefoma-build.tar.gz pefoma.dev/dev.pefoma-build.tar.gz
 cd pefoma.dev
 ```
 
-4. Post-BUild Step Build Artifacts Over SSH
+4. Post-Build Step Build Artifacts Over SSH
 
-!(https://github.com/dapperandy/Examples/blob/main/jenkins/postbuild.png)
+![Post Build Step](https://github.com/dapperandy/Examples/blob/main/jenkins/postbuild.png)
 
 ```
 cd /var/www/html/
