@@ -1,5 +1,15 @@
 # Deploy Laravel via Jenkins
 
+This is the process to build and deploy a laravel application from SCM to a web server. Using webhook triggers we are able to run builds based on the branch the commit came from. eg Development commits trigger the dev environment build while Master commits trigger the prod environment build and maybe Staging commits trigger a staging build.
+
+## Required Plugins
+
+A few plugins are needed to make this work:
+
+- Generic Webhook Triggers
+- Send build artifacts over SSH
+- Slack notifications
+
 1. Add Source Code Repository
 
 ![Source Code Repo](https://github.com/dapperandy/Examples/blob/main/jenkins/sourcecode.png)
@@ -45,4 +55,12 @@ php artisan route:cache
 php artisan cache:clear
 php artisan schedule:run
 ```
+
+5. Notify the team a job is running and if it completes.
+
+![Slack Notify](https://github.com/dapperandy/Examples/blob/main/jenkins/slacknotify.png)
+
+
+![Slack Notify 2](https://github.com/dapperandy/Examples/blob/main/jenkins/slacknotify2.png)
+
 
