@@ -41,7 +41,7 @@ rm -rf dev.pefoma-build.tar.gz
 cp -rf pefoma.dev/* /var/www/html/
 rm -rf pefoma.dev/*
 cp /var/www/pefoma.env /var/www/html/.env
-cp /var/www/FirebaseKey.json /var/www/html/jenkins/pefoma/FirebaseKey.json
+cp /var/www/FirebaseKey.json /var/www/html/FirebaseKey.json
 mkdir -p /var/www/html/storage/framework/{sessions,views,cache}
 mkdir /var/www/html/storage/logs
 cd /var/www/html/
